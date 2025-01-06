@@ -1,5 +1,5 @@
 
-// #include "garbage_collector.h"
+// #include "../includes/garbage_collector.h"
 
 // int	main(void)
 // {

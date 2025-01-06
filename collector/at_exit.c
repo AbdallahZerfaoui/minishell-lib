@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 23:44:11 by iziane            #+#    #+#             */
-/*   Updated: 2025/01/02 18:58:13 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 18:27:18 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "garbage_collector.h"
+#include "../includes/garbage_collector.h"
 
 void	remove_empty_nodes(void)
 {

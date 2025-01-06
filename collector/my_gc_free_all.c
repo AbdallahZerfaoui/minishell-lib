@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 22:21:31 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/01 22:32:30 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 18:27:18 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "garbage_collector.h"
+#include "../includes/garbage_collector.h"
 
 void	my_gc_free_all(void)
 {
