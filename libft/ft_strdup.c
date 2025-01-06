@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:52:36 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/01 20:15:27 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 17:14:16 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 // This function returns a pointer to a null-terminated byte string,
 // which is a duplicate of the string pointed to by s.

@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:07:43 by azerfaou          #+#    #+#             */
-/*   Updated: 2024/12/22 20:19:17 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 17:14:16 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 /**
  * The ft_bzero() function shall place n zero-valued bytes

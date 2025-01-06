@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/01 18:43:09 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/01 18:43:18 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 17:14:16 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_strncpy(char *destination, const char *source, size_t n)
 {
