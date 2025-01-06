@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:34:21 by iziane            #+#    #+#             */
-/*   Updated: 2025/01/06 17:21:55 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/06 18:44:23 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 # define GARBAGE_COLLECTOR_H
 
 //Libs
-// # include "../minishell.h"
+# include "../../minishell.h"
 # include <stdlib.h>
 # include <stdio.h>
 # include <stdint.h>
