@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:52:00 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/06 17:14:16 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/07 19:39:03 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,17 +45,6 @@ static size_t	get_word_len(char const *str, size_t *i, char c)
 	return (len);
 }
 
-static void	*free_all(char **result, size_t j)
-{
-	while (j > 0)
-	{
-		j--;
-		free(result[j]);
-	}
-	free(result);
-	return (NULL);
-}
-
 // use ft_substr in ft_split
 char	**ft_split(char const *s, char c)
 {
@@ -78,7 +67,7 @@ char	**ft_split(char const *s, char c)
 		{
 			result[j] = ft_substr(s, i, len);
 			if (!result[j])
-				return (free_all(result, j));
+				return (NULL);
 			j++;
 		}
 		i += len;
