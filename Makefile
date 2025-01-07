@@ -7,6 +7,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 #Sources
 SRC = $(wildcard libft/*.c) \
+	$(wildcard collection/*.c) \
 	get_next_line.c
 
 #Rules
