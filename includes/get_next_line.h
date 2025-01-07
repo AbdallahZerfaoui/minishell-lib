@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/16 16:40:44 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/01 17:17:20 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/07 19:29:15 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 #  define BUFFER_SIZE 10
 # endif
 
+# include "libft.h"
 # include <stdio.h>
 # include <stdlib.h>
 # include <string.h>
@@ -25,10 +26,5 @@
 char	*ft_strjoin_gnl(char const *s1, char const *s2);
 // Standard functions
 char	*get_next_line(int fd);
-char	*ft_strdup(const char *s);
-size_t	ft_strlen(const char *s);
-char	*ft_strchr(const char *str, int search_chr);
-char	*ft_strncpy(char *destination, const char *source, size_t n);
-void	*ft_calloc(size_t nitems, size_t size);
 
 #endif

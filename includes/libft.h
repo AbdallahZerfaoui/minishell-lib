@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:01:32 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/06 17:28:50 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/07 19:28:12 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,7 +47,9 @@ void				*ft_calloc(size_t nitems, size_t size);
 char				*ft_strdup(const char *s);
 char				*ft_delsep(char *str); // from khnichou
 
-// Addictional functions (11)
+// Addictional functions (12)
+char				*ft_strncpy(char *destination, const char *source,
+						size_t n);
 char				*ft_substr(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
 char				*ft_strtrim(char const *s1, char const *set);
