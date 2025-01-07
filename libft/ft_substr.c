@@ -6,29 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:55:25 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/06 17:14:16 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/07 19:41:27 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
-
-static char	*ft_strncpy(char *destination, const char *source, size_t n)
-{
-	size_t	i;
-
-	i = 0;
-	while (source[i] && i < n)
-	{
-		destination[i] = source[i];
-		i++;
-	}
-	while (i < n)
-	{
-		destination[i] = '\0';
-		i++;
-	}
-	return (destination);
-}
 
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
