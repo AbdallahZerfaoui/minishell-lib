@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/17 23:49:19 by iziane            #+#    #+#             */
-/*   Updated: 2025/01/06 18:27:18 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/01/07 19:37:40 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,7 +34,6 @@ void	*ft_malloc(size_t size)
 	ptr = malloc(size);
 	if (!ptr)
 	{
-		g_data->exit_status = MALLOC_ERROR;
 		return (NULL);
 	}
 	gc_add_begin(ptr);
