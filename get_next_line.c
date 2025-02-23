@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/12 12:28:32 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/01/06 17:21:28 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/23 22:36:37 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,7 +46,6 @@ static char	*extract_and_update(char *new_line_ptr, char **remainder)
 		if (!new_remainder)
 			return (free(line), NULL);
 	}
-	// free(*remainder);
 	*remainder = new_remainder;
 	return (line);
 }
@@ -73,7 +72,6 @@ static ssize_t	read_and_append(int fd, char **remainder)
 		new_remainder = ft_strjoin_gnl(*remainder, buffer);
 		if (!new_remainder)
 			return (free(*remainder), *remainder = NULL, -1);
-		// free(*remainder);
 		*remainder = new_remainder;
 	}
 	return (bytes_read);
@@ -92,7 +90,6 @@ static void	handle_eof(char **line, char **remainder)
 	if (*remainder && **remainder)
 	{
 		*line = ft_strdup(*remainder);
-		// free(*remainder);
 		*remainder = NULL;
 		if (!*line)
 			return ;
@@ -116,13 +113,11 @@ char	*get_next_line(int fd)
 	static char	*remainder = NULL;
 
 	line = NULL;
-	// bytes_read = 0;
 	if (fd < 0 || BUFFER_SIZE <= 0 || read(fd, NULL, 0) < 0)
 		return (free(remainder), remainder = NULL, NULL);
 	while (1)
 	{
 		bytes_read = read_and_append(fd, &remainder);
-		// printf("bytes_read = %ld\n", bytes_read);
 		if (bytes_read < 0)
 			return (free(remainder), remainder = NULL, NULL);
 		new_line_ptr = ft_strchr(remainder, '\n');
