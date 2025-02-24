@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:34:21 by iziane            #+#    #+#             */
-/*   Updated: 2025/02/24 13:48:02 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/24 16:41:08 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int						gc_contains(void *target);
 void					gc_error(const char *msg, char *file, int line,
 							uint8_t exit_stat);
 t_gc_node				*gc_create_node(void *pointer2mem);
+t_garbage_collector		*gc_get_instance(void);
 
 // shutdown the garbage collector
 void					gc_shutdown(void);
