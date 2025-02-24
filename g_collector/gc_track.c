@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 12:52:37 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/02/24 14:15:49 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/24 14:22:20 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ t_gc_node	*gc_create_node(void *pointer2mem)
 {
 	t_gc_node	*new_node;
 
-	new_node = (t_gc_node *)ft_malloc(sizeof(t_gc_node) * 1);
+	new_node = (t_gc_node *)malloc(sizeof(t_gc_node) * 1);
 	if (!new_node)
 		return (NULL);
 	new_node->pointer = pointer2mem;
