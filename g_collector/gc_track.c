@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 12:52:37 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/02/24 13:34:08 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/24 13:36:14 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ int	gc_contains(void *target)
 	t_gc_node			*current;
 	t_garbage_collector	*gc;
 
-	gc = get_gc_instance();
+	gc = gc_get_instance();
 	current = gc->head;
 	while (current)
 	{
@@ -52,7 +52,7 @@ void	gc_track(void *ptr)
 	t_gc_node			*new_node;
 	t_garbage_collector	*gc;
 
-	gc = get_gc_instance();
+	gc = gc_get_instance();
 	if (gc_contains(ptr))
 		return ;
 	new_node = gc_create_node(ptr);
