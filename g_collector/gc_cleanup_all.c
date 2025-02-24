@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 13:18:15 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/02/24 13:26:50 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/24 14:57:18 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -56,4 +56,5 @@ void	gc_cleanup_all(void)
 			prev = NULL;
 		}
 	}
+	gc = NULL;
 }
