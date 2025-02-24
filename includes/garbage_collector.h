@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:34:21 by iziane            #+#    #+#             */
-/*   Updated: 2025/02/24 13:31:43 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/02/24 13:41:16 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -47,6 +47,9 @@ typedef struct s_garbage_collector
 t_garbage_collector	*gc_init(void);
 t_garbage_collector	*gc_get_instance(void);
 
+// main funtion
+void				*ft_malloc(size_t size);
+
 // add a pointer to the garbage collector
 void				gc_track(void *ptr);
 int					gc_contains(void *target);
@@ -58,7 +61,7 @@ t_gc_node			*gc_create_node(void *pointer2mem);
 void				gc_shutdown(void);
 void				gc_cleanup_all(void);
 
-// main funtion
-void				*ft_malloc(size_t size);
+//	extra
+void				gc_untracked_free(char *str);
 
 #endif
