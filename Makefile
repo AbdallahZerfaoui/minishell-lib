@@ -16,8 +16,8 @@ LIBFT := ft_atoi.c ft_bzero.c ft_calloc.c \
 	ft_strtrim.c ft_substr.c
 LIBFT := $(addprefix libft/, $(LIBFT))
 
-GC := ft_malloc.c ft_cleanup_all.c gc_init.c \
-	gc_shutdown.c gc_track.c gc_untrack.c
+GC := ft_malloc.c gc_cleanup_all.c gc_init.c \
+	gc_shutdown.c gc_track.c gc_untracked_free.c
 GC := $(addprefix g_collector/, $(GC))
 
 SRC = $(LIBFT) \
