@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:47:08 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/03/02 20:03:22 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 20:07:05 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ static void	putposnbr_fd(int n, int fd)
 	}
 }
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(int fd, int n)
 {
 	if (n == INT_MIN)
 	{

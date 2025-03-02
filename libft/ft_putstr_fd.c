@@ -6,13 +6,13 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:51:42 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/03/02 20:03:11 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 20:07:13 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../includes/libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putstr_fd(int fd, char *s)
 {
 	while (*s)
 	{
