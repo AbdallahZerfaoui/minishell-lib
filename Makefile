@@ -13,7 +13,7 @@ LIBFT := ft_atoi.c ft_bzero.c ft_calloc.c \
 	ft_strchr.c ft_strcmp.c ft_strcpy.c \
 	ft_strdup.c ft_strjoin.c ft_strjoin_all.c \
 	ft_strlen.c ft_strncmp.c ft_strncpy.c ft_strstr.c\
-	ft_strtrim.c ft_substr.c
+	ft_strtrim.c ft_substr.c ft_putnbr_fd.c
 LIBFT := $(addprefix libft/, $(LIBFT))
 
 GC := ft_malloc.c gc_cleanup_all.c gc_init.c \

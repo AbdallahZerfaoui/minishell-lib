@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/24 12:52:37 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/02/24 14:22:20 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 19:45:13 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,13 @@ t_gc_node	*gc_create_node(void *pointer2mem)
 void	gc_error(const char *msg, char *file, int line, uint8_t exit_stat)
 {
 	(void)exit_stat;
-	fprintf(stderr, "Error: File %s line %d: %s\n", file, line, msg);
+	ft_putstr_fd("Error: File ", STDERR);
+	ft_putstr_fd(file, STDERR);
+	ft_putstr_fd(" line ", STDERR);
+	ft_putnbr_fd(line, STDERR);
+	ft_putstr_fd(": ", STDERR);
+	ft_putstr_fd(msg, STDERR);
+	ft_putstr_fd("\n", STDERR);
 	gc_shutdown();
 }
 
