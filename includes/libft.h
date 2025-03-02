@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/12/22 19:01:32 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/03/02 19:02:09 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 19:22:40 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,7 +62,7 @@ char				*ft_itoa(int value);
 // 							char));
 // void				ft_striteri(char *s, void (*func)(unsigned int, char *));
 // void				ft_putchar_fd(char c, int fd);
-// void				ft_putstr_fd(int fd, char *s);
+void				ft_putstr_fd(int fd, char *s);
 // void				ft_putendl_fd(char *s, int fd);
 // void				ft_putnbr_fd(int n, int fd);
 
