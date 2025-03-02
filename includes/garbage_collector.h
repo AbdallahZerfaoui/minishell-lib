@@ -6,7 +6,7 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 22:34:21 by iziane            #+#    #+#             */
-/*   Updated: 2025/03/02 19:43:31 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 19:51:06 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 # include <stdio.h>
 # include <stdlib.h>
 # include <strings.h>
+# include <unistd.h>
 
 typedef struct s_gc_node
 {
