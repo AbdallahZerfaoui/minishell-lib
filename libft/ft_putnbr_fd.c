@@ -6,11 +6,11 @@
 /*   By: azerfaou <azerfaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/07 20:47:08 by azerfaou          #+#    #+#             */
-/*   Updated: 2025/03/02 19:40:35 by azerfaou         ###   ########.fr       */
+/*   Updated: 2025/03/02 19:48:36 by azerfaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static void	putposnbr_fd(int n, int fd)
 {
